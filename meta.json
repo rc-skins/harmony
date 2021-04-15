@@ -1,0 +1,14 @@
+{
+  "extends": "elastic",
+  "name": "Harmony",
+  "author": "Beliy / https://github.com/rc-skins/harmony / version 0.1.0",
+  "license": "Creative Commons Attribution-ShareAlike",
+  "license-url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "links": {
+    "stylesheet": "/styles.css"
+  },
+  "meta": {
+    "viewport": false
+  }
+}
+

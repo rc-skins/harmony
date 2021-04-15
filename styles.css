@@ -1,0 +1,283 @@
+html.dark-mode #taskmenu a:hover, 
+html.dark-mode .popupmenu .listing li > a:not(.disabled):hover, 
+html.dark-mode .header a.button.icon:not(.disabled):focus, 
+html.dark-mode .header a.button.icon:not(.disabled):hover, 
+html.dark-mode .menu.toolbar .dropbutton:not(.disabled):hover, 
+html.dark-mode .menu a:not(.disabled):focus, 
+html.dark-mode .menu a:not(.disabled):hover {
+    background-color: #374549 !important;
+}
+
+
+html.dark-mode > body > #layout > #layout-menu {
+    background-color: #11476a !important;
+}
+
+html.dark-mode #layout-menu .special-buttons a:not(:focus) {
+    background-color: transparent !important;
+}
+
+html.dark-mode > body > #layout > div > .searchbar {
+    background-color: transparent;
+}
+
+html.dark-mode > body > #layout > div > .header,
+html.dark-mode > body > #layout > div > .searchbar,
+html.dark-mode > body > #layout > div > .footer.small,
+html.dark-mode > body .html-editor,
+html.dark-mode > body .editor-toolbar,
+html.dark-mode > body .input-group-text {
+    background: none !important;
+}
+
+
+body a {
+    color: #569BE4;
+}
+
+body .btn-primary {
+    color: #fff;
+    background: #569BE4;
+    border-color: #569BE4;
+}
+
+body .popupmenu .listing li > a:not(.disabled):hover {
+    background-color: #569BE4;
+}
+
+body > #layout .menu a:not(.disabled):focus,
+body > #layout .menu a:not(.disabled):hover,
+body > #layout .header a.button.icon:not(.disabled):focus,
+body > #layout .header a.button.icon:not(.disabled):hover {
+    background-color: #dceeff;
+}
+
+body > #layout > #layout-menu .popover-header {
+    background-color: #569BE4 !important;
+}
+
+body > #layout > div > .header,
+body > #layout > div > .searchbar,
+body > #layout > div > .footer.small,
+body .html-editor,
+body .editor-toolbar,
+body .input-group-text {
+    background-color: #e0f7ff !important;
+}
+
+body > #layout > #layout-menu > #taskmenu .special-buttons {
+    background: none !important;
+}
+
+body > #layout > #layout-menu #taskmenu > a.selected,
+body > #layout > #layout-menu #taskmenu .action-buttons a.selected,
+body > #layout > #layout-menu #taskmenu .special-buttons a.selected,
+body > #layout > #layout-menu #taskmenu > a:hover,
+body > #layout > #layout-menu #taskmenu .action-buttons a:hover,
+body > #layout > #layout-menu #taskmenu .special-buttons a:hover,
+body > #layout > #layout-menu #taskmenu > a:focus,
+body > #layout > #layout-menu #taskmenu .action-buttons a:focus,
+body > #layout > #layout-menu #taskmenu .special-buttons a:focus {
+    background-color: #005793 !important;
+}
+
+body .file-upload.droptarget::after {
+    content: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20960%20560%22%3E%0A%3Cpath%20fill%3D%22%23e0f7ff%22%20d%3D%22M690%20245c0%209.2-3.5%2017.9-10.1%2024.9l-175%20175c-6.6%206.6-15.3%2010.1-24.9%2010.1-9.2%200-18.4-3.5-24.9-10.1l-175-175c-6.6-7-10.1-15.8-10.1-24.9%200-4.4.9-9.2%202.6-13.6C277.9%20218.3%20291%20210%20305%20210h87.5V35c0-19.2%2015.8-35%2035-35h105c19.2%200%2035%2015.8%2035%2035v175H655c14%200%2027.1%208.3%2032.4%2021.4%201.7%204.4%202.6%209.2%202.6%2013.6zm0%20245H270V350h-70v140c0%2038.5%2031.5%2070%2070%2070h420c38.5%200%2070-31.5%2070-70V350h-70v140z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+body .file-upload {
+    border: .2rem dashed #e0f7ff;
+}
+
+@media screen and (min-width: 1024px) {
+  
+    #layout {
+        top: 0;
+    }
+
+    #layout-sidebar,
+    #layout-content,
+    #layout-list {
+        margin-top: 50px !important;
+    }
+
+    body > #layout-content .iframe-wrapper {
+        margin-bottom: 12px;
+    }
+
+    body > #layout > #layout-menu .popover-header {
+        float: left;
+        width: 58px;
+        background: none !important;
+    }
+
+    body > #layout > #layout-menu .popover-header img {
+        position: relative;
+        z-index: 1000;
+    }
+    
+    /* main menu */
+    body > #layout {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+    }
+
+    body > #layout > #layout-menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        width: 100%;
+        background-color: #569BE4;
+    }
+
+    body > #layout > #layout-menu #taskmenu {
+        width: 100%;
+        text-align: right;
+    }
+
+    body > #layout > #layout-menu #taskmenu > a, body > #layout > #layout-menu #taskmenu > span, body > #layout > #layout-menu #taskmenu > span.action-buttons a, body > #layout > #layout-menu #taskmenu > span.special-buttons a {
+        position: static;
+        display: inline-block;
+        width: auto;
+        max-width: none;
+        height: 50px;
+        color: #fff !important;
+        text-transform: uppercase;
+    }
+
+    body > #layout > #layout-menu #taskmenu > a span.inner, body > #layout > #layout-menu #taskmenu > span span.inner, body > #layout > #layout-menu #taskmenu > span.action-buttons a span.inner, body > #layout > #layout-menu #taskmenu > span.special-buttons a span.inner {
+        font-size: 1.1rem;
+    }
+
+    body > #layout > #layout-menu #taskmenu > span.action-buttons a:before, body > #layout > #layout-menu #taskmenu > a:before {
+        display: none;
+        width: auto;
+        padding-right: 7px;
+        font-size: 1.2rem;
+        position: relative;
+        top: -2px;
+    }
+
+    body > #layout > #layout-menu #taskmenu > a, body > #layout > #layout-menu #taskmenu > span.action-buttons a, body > #layout > #layout-menu #taskmenu > span.special-buttons a {
+        padding: 15px 0.8rem 10px 0.8rem;
+    }
+
+    body > #layout > #layout-menu #taskmenu > span.special-buttons a span {
+        display: none;
+    }
+
+    body > #layout > #layout-menu #taskmenu > span.special-buttons a:before {
+        padding: 0;
+    }
+
+    body > #layout > #layout-menu #taskmenu > #button-apps {
+        float: right;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    body > #layout > #layout-menu #taskmenu > #button-apps:before {
+        position: relative;
+        top: 1px;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    html.dark-mode > body > #layout > div > .footer  {
+        background: none !important;
+    }
+    
+    body > #layout > div > .footer  {
+        background-color: #e0f7ff !important;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    
+   html.dark-mode > body > #layout > #layout-content > #compose-content .btn-link {
+        color: #c5d1d3;
+    }
+    
+    body > #layout > #layout-menu{
+        background-color: #569BE4;
+    } 
+    
+    body > #layout > #layout-menu .popover-header {
+        background: none !important;
+    }
+    
+    body > #layout > #layout-content > #compose-content .btn-link {
+        color: #569BE4;
+    }
+    
+ /*   .btn {
+        border: none;
+        padding: 0.3em 2em;
+        text-transform: uppercase;
+        border-radius: 2px !important;
+        color: #fff !important;
+    } */
+
+    #taskmenu {
+        a.selected,
+        .action-buttons a {
+            background: transparent;
+            color: #fff;
+        }
+
+        a.logout {
+            color: #fff !important;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    html.dark-mode > body > #layout > #layout-menu .popover-header {
+        background-color: #11476a !important;
+    }
+
+    html.dark-mode > body > #layout > #layout-menu {
+        background: #161b1d !important;
+    }
+    
+    html.dark-mode > body > #layout > #layout-menu #taskmenu a.selected,
+    html.dark-mode > body > #layout > #layout-menu #taskmenu .action-buttons a.selected,
+    html.dark-mode > body > #layout > #layout-menu #taskmenu .special-buttons a.selected,
+    html.dark-mode > body > #layout > #layout-menu #taskmenu  a:hover,
+    html.dark-mode >  body > #layout > #layout-menu #taskmenu .action-buttons a:hover,
+    html.dark-mode > body > #layout > #layout-menu #taskmenu .special-buttons a:hover,
+    html.dark-mode > body > #layout > #layout-menu #taskmenu  a:focus,
+    html.dark-mode > body > #layout > #layout-menu #taskmenu .action-buttons a:focus,
+    html.dark-mode > body > #layout > #layout-menu #taskmenu .special-buttons a:focus {
+        background-color: #374549 !important;
+    }
+    
+    html.dark-mode > body > #layout > #layout-menu .popover-header a {
+        color: #569BE4 !important;
+    }
+    
+    body > #layout > #layout-menu #taskmenu a.selected,
+    body > #layout > #layout-menu #taskmenu .action-buttons a.selected,
+    body > #layout > #layout-menu #taskmenu .special-buttons a.selected,
+    body > #layout > #layout-menu #taskmenu a:hover,
+    body > #layout > #layout-menu #taskmenu .action-buttons a:hover,
+    body > #layout > #layout-menu #taskmenu .special-buttons a:hover,
+    body > #layout > #layout-menu #taskmenu a:focus,
+    body > #layout > #layout-menu #taskmenu .action-buttons a:focus,
+    body > #layout > #layout-menu #taskmenu .special-buttons a:focus {
+        background-color: #dceeff !important;
+    }
+    
+     body > #layout > #layout-menu .popover-header a {
+        color: #005793 !important;
+    }
+    
+}
