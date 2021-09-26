@@ -26,19 +26,40 @@ html.dark-mode > body > #layout > div > .searchbar,
 html.dark-mode > body > #layout > div > .footer.small,
 html.dark-mode > body .html-editor,
 html.dark-mode > body .editor-toolbar,
-html.dark-mode > body .input-group-text {
+html.dark-mode > body .input-group-text,
+html.dark-mode > body ul.treelist li.selected > a,
+html.dark-mode > body ul.treelist li.selected > div > a {
     background: none !important;
 }
 
+html.dark-mode > body .listing li.selected,
+html.dark-mode > body .listing tr.selected td{
+    background: #374549 !important;
+}
+
+html.dark-mode > body .btn-secondary {
+    background-color: #006a9d
+}
+
+html.dark-mode > body > #layout > #layout-content .tox .tox-toolbar-overlord > div  {
+    background: url("data:image/svg+xml,%3Csvg height='33px' viewBox='0 0 40 33px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='32px' width='100' height='1' fill='%237c949c'/%3E%3C/svg%3E") #374549;
+}
 
 body a {
     color: #569BE4;
 }
 
-body .btn-primary {
+body .btn-primary,
+body .btn-secondary {
     color: #fff;
-    background: #569BE4;
-    border-color: #569BE4;
+    background: #569be4;
+    border-color: #569be4;
+}
+
+body .btn-secondary:focus,
+body .btn-secondary:hover {
+    background: #1eb6ff;
+    border-color: #1eb6ff;
 }
 
 body .popupmenu .listing li > a:not(.disabled):hover {
@@ -48,8 +69,16 @@ body .popupmenu .listing li > a:not(.disabled):hover {
 body > #layout .menu a:not(.disabled):focus,
 body > #layout .menu a:not(.disabled):hover,
 body > #layout .header a.button.icon:not(.disabled):focus,
-body > #layout .header a.button.icon:not(.disabled):hover {
-    background-color: #dceeff;
+body > #layout .header a.button.icon:not(.disabled):hover,
+body .menu a:not(.disabled):focus, 
+body .menu a:not(.disabled):hover,
+body .menu.toolbar .dropbutton:not(.disabled):hover,
+body .html-editor .editor-toolbar .mce-i-html:focus,
+body .html-editor .editor-toolbar .mce-i-html:hover,
+body .tox .tox-tbtn:hover,
+body .tox .tox-tbtn--enabled,
+body .tox .tox-tbtn--enabled:hover {
+    background-color: #afdfff;
 }
 
 body > #layout > #layout-menu .popover-header {
@@ -61,8 +90,15 @@ body > #layout > div > .searchbar,
 body > #layout > div > .footer.small,
 body .html-editor,
 body .editor-toolbar,
-body .input-group-text {
+body > #layout > div > .input-group-text,
+body ul.treelist li.selected > a,
+body ul.treelist li.selected > div > a,
+body .listing tr.selected td {
     background-color: #e0f7ff !important;
+}
+
+body > #layout > #layout-content .tox .tox-toolbar-overlord > div {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg height='33px' viewBox='0 0 40 33px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='32px' width='100' height='1' fill='%23cccccc'/%3E%3C/svg%3E") #e0f7ff;
 }
 
 body > #layout > #layout-menu > #taskmenu .special-buttons {
@@ -81,6 +117,28 @@ body > #layout > #layout-menu #taskmenu .special-buttons a:focus {
     background-color: #005793 !important;
 }
 
+body .menu.toolbar a,
+body > #layout > div > .header, 
+body > #layout > div > .header a.button,
+body .searchbar a,
+body .quota-widget,
+body .menu.pagenav a,
+body .menu.pagenav .pagenav-text,
+body ul.treelist li.selected > a,
+body ul.treelist li.selected > div > a,
+body .searchbar form::before,
+body .listing li a,
+body .listing tbody td,
+body .listing span.secondary,
+body .listing-info {
+    color: #285c92;
+}
+
+body ul.treelist li.selected > a,
+body ul.treelist li.selected > div > a {
+    font-weight: bold;
+}
+
 body .file-upload.droptarget::after {
     content: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20960%20560%22%3E%0A%3Cpath%20fill%3D%22%23e0f7ff%22%20d%3D%22M690%20245c0%209.2-3.5%2017.9-10.1%2024.9l-175%20175c-6.6%206.6-15.3%2010.1-24.9%2010.1-9.2%200-18.4-3.5-24.9-10.1l-175-175c-6.6-7-10.1-15.8-10.1-24.9%200-4.4.9-9.2%202.6-13.6C277.9%20218.3%20291%20210%20305%20210h87.5V35c0-19.2%2015.8-35%2035-35h105c19.2%200%2035%2015.8%2035%2035v175H655c14%200%2027.1%208.3%2032.4%2021.4%201.7%204.4%202.6%209.2%202.6%2013.6zm0%20245H270V350h-70v140c0%2038.5%2031.5%2070%2070%2070h420c38.5%200%2070-31.5%2070-70V350h-70v140z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
@@ -89,16 +147,32 @@ body .file-upload {
     border: .2rem dashed #e0f7ff;
 }
 
-@media screen and (min-width: 1024px) {
-  
+body .searchbar {
+    border-bottom: 1px solid #d4dbde;
+}
+
+body .quota-widget .count {
+    font-size: 100%;
+}
+
+body .menu.pagenav .pagenav-text {
+    font-size: 85%;
+}
+
+@media screen and (min-width: 1025px) {
+
     #layout {
         top: 0;
     }
 
-    #layout-sidebar,
-    #layout-content,
-    #layout-list {
-        margin-top: 50px !important;
+    body > #layout > #layout-sidebar,
+    body > #layout > #layout-content,
+    body > #layout > #layout-list {
+        margin-top: 50px;
+    }
+
+    html.iframe #layout-content {
+        margin-top: 0px;
     }
 
     body > #layout-content .iframe-wrapper {
@@ -115,7 +189,7 @@ body .file-upload {
         position: relative;
         z-index: 1000;
     }
-    
+
     /* main menu */
     body > #layout {
         position: absolute;
